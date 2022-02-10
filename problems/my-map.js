@@ -1,5 +1,14 @@
 function myMap(inputArray, callback) {
-  // Your code here
+  // let newArr = [];
+  // for (let el of inputArray) {
+  //   newArr.push(callback(el))
+  // }
+  return inputArray.map(el => callback(el))
+}
+let calling = (num) => {
+  return num * 2
 }
 
-module.exports = myMap;
+
+// console.log(myMap((myArr), calling))
+module.exports = { myMap };

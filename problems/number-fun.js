@@ -3,17 +3,17 @@ function returnsThree() {
 }
 
 function reciprocal(n) {
-  if(n < 1 || n > 1000000){
+  if (n < 1 || n > 1000000) {
     throw new TypeError('Your number must be between 1 and 10^6')
   }
-  return 1/n;
+  return 1 / n;
 }
 
-try{
+try {
   reciprocal(5)
   reciprocal(50)
   reciprocal(1000001)
-}catch(error){
+} catch (error) {
   console.error(error.name, error.message)
 }
 
